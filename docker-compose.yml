@@ -1,0 +1,9 @@
+version: '3'
+services:
+  zest:
+    container_name: zest-docker
+    build: .
+    ports:
+      - '8000:80'
+    volumes:
+      - '.:/app'
